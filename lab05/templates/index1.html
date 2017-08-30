@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculator</title>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <p>
+        {% for i in output %}
+
+        {% endfor %}
+        </p>
+        <Form>
+        {% for i in [1, 2, 3, 4, 5, 6, 7, 8, 9, +, -] %}
+            <button type="button" name="btn" value="{{ i }}">
+        {% endfor %}
+        </Form> 
+    </body>
+</html>
