@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculator</title>
+    </head>
+    <body>
+        {% for i in output %}
+            {{ i }}
+        {% endfor %}
+        <form action="" method = post>
+            {%for index in range(length) %}
+
+            	<button type = "submit" name = "button" style="height:100px;width:100px"value = {{buttons[index]}}>{{buttons[index]}} </button>
+            	{%if (index+1)%4==0 %} <br>
+           		{% endif %}
+            {% endfor %}
+        </form>
+    </body>
+</html>
